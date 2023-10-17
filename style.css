@@ -1,0 +1,163 @@
+
+body {
+  background-color: black;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto ;
+  gap: 10px;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+h1{
+color:white;
+  text-align: left;
+  font-size: 48px;
+  font-family: sans-serif;
+  padding-left: 10px;
+  padding-top: 45px;
+  text-indent: 15px;
+
+}
+
+
+h2{
+  color:white;
+  text-align: center;
+  padding-top:100px ;
+  font-family: sans-serif;
+  
+  
+  
+}
+
+p{
+  color:white;
+  text-align: center;
+  padding: 50px;
+  font-family: sans-serif;
+}
+
+img.a{
+  float: left;
+  height: 150px;
+  width: 100px;
+  padding: auto;
+  border-radius: 25px;
+  
+}
+img.b{
+  float: left;
+  height: 500+px;
+  width: auto;
+  padding: 25px;
+  border-radius: 25px;
+  
+}
+
+#wire{
+  text-align: left;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0px;
+  width: 100%;
+  top: 150px;
+
+  border: #ffffff;
+  border-top: 2px solid #ffffff;
+  left:108px; 
+
+ 
+}
+
+#wire li{
+  text-align: left;
+  position: relative;
+  list-style: none;
+  margin: 0 15px;
+  padding:0;
+  left: 0px;
+  display: inline-block;
+  width: 15px;
+  height: 30px;
+  top:150px;
+ border-radius: 50%;
+ top: 0px;
+ background-color: white;
+animation-name: even-flash;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-fill-mode: both;
+
+}
+
+#wire li:nth-child(odd){
+  animation-name: odd-flash;
+}
+#wire li:before{
+  content:"";
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  border-radius: 4px;
+  top: -5px;
+  left: 0;
+  background: #444;
+  
+}
+@keyframes even-flash{
+  0%, 100%{
+    background: rgba(255,230,65,1);
+    box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 1);;
+  }
+  50%{
+    background: rgba(255,230,65,0.5);
+    box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 0.3);
+  }
+  
+}
+@keyframes odd-flash{
+  50% {
+    background: rgba(255,65,185,1);
+    box-shadow: 0px 2px 20px 4px rgba(255,65,185, 1);;
+  }
+  0%, 100%{
+    background: rgba(255,65,185,0.5);
+    box-shadow: 0px 2px 20px 4px rgba(255,65,185, 0.3);
+  }
+  
+}
+nav {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  top: 10px;
+}
+nav li {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 10px;
+  font-weight: 700;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #0000ff;
+}
+
+
